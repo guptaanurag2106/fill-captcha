@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "fill captcha",
+    "description": "Fill Captcha",
+    "version": "1.0.0",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://moodle.iitd.ac.in/login/index.php"
+            ],
+            "js": [
+                "script.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "activeTab",
+        "tabs"
+    ]
+}
