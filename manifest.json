@@ -14,11 +14,25 @@
             "js": [
                 "script.js"
             ]
+        },
+        {
+            "matches": [
+                "https://webmail.iitd.ac.in/roundcube/*"
+            ],
+            "js": [
+                "script2.js"
+            ]
         }
     ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
     "permissions": [
-        "activeTab",
-        "tabs",
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>",
         "storage"
     ]
 }

@@ -6,5 +6,9 @@ window.onload = function () {
         chrome.storage.sync.set({ "username": username })
         chrome.storage.sync.set({ "password": password })
 
+        document.getElementById("username").value = "";
+        document.getElementById("password").value = "";
+
+
     }
 }
