@@ -4,6 +4,7 @@
     "description": "Fill Captcha",
     "version": "1.0.0",
     "browser_action": {
+        "default_icon": "icons/logo.png",
         "default_popup": "popup.html"
     },
     "content_scripts": [
@@ -12,7 +13,7 @@
                 "https://moodle.iitd.ac.in/login/index.php"
             ],
             "js": [
-                "script.js"
+                "moodle.js"
             ]
         },
         {
@@ -20,7 +21,15 @@
                 "https://webmail.iitd.ac.in/roundcube/*"
             ],
             "js": [
-                "script2.js"
+                "webmail.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://oauth.iitd.ac.in/login.php?*"
+            ],
+            "js": [
+                "oauth.js"
             ]
         }
     ],
@@ -34,5 +43,10 @@
         "webRequestBlocking",
         "<all_urls>",
         "storage"
-    ]
+    ],
+    "icons": {
+        "16": "icons/icon_16.png",
+        "48": "icons/icon_48.png",
+        "128": "icons/icon_128.png"
+    }
 }
