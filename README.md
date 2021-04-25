@@ -4,9 +4,9 @@ This is a browser extension to help IITD students fill their username, password 
 
 **Installation**
 
--clone the repository by `git clone https://github.com/guptaanurag2106/fill-captcha.git`
--Open `chrome://extensions`
--Switch on `Developer Mode`
--Click on `Load unpacked` and then select the fill-captcha folder 
+1. clone the repository by `git clone https://github.com/guptaanurag2106/fill-captcha.git`
+2. Open `chrome://extensions`
+3. Switch on `Developer Mode`
+4. Click on `Load unpacked` and then select the fill-captcha folder 
 
 The extension will be loaded in the browser
