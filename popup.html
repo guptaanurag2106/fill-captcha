@@ -6,16 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        a:hover {
+            color: blue;
+        }
+
+        button {
+            background-color: ivory;
+        }
+
+        #saved {
+            color: red;
+        }
+    </style>
+
 </head>
 
 <body>
+    <div>
+        <h3 id="saved"> </h3>
+        <h3>Quick Links</h3>
+        <a href="https://moodle.iitd.ac.in/login/index.php" target="_blank"><img src="icons/moodle.png" alt="moodle"
+                width=30px></a>
+        <a href="https://webmail.iitd.ac.in/roundcube/" target="_blank"><img src="icons/IITD_Logob.png" alt=" webmail"
+                width=40px>l</a>
+        <a href="https://eacademics.iitd.ac.in/sportal/login" target="_blank"><img src="icons/iitd_logo.png"
+                alt="e-academics" width=27px></a>
+    </div>
+
     <div class="div">
-        <p>Enter user details</p>
-        <input type="text" id="username" placeholder="Enter Username">
+        <h2>Enter user details</h2>
+        <p>Enter Username</p>
+        <input type="text" id="username" placeholder="Username">
+        <p>Enter Password</p>
+        <input type="password" id="password" placeholder="Password">
         <br>
-        <input type="password" id="password" placeholder="Enter Password">
         <br>
         <button id="save">Save</button>
+
     </div>
     <script src="popup.js"></script>
 </body>
